@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p{
+  color: wheat;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.test{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  color: white;
+}
+.tab{
+  font-size: 13px;
+}
+
+.top-bar{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.logo{
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  background: rgb(121, 11, 11);
+}
+ button{
+  margin-right: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  background: transparent;
+  color: gray;
+}
+
+
+.active{
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  text-decoration: underline;
+}
+.contents{
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  color: white;
+}
+.content1{
+  padding: 10%;
+  
+}
+
+.content-active .content{
+  height: 100vh;
+  width: 100vw;
+}
+.heading h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.heading2 h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.heading{
+  margin: 0 0 60% 0
+  ;
+}
+.car-type p{
+  font-style: italic;
+}
+.content-section{
+  display: flex;
+  justify-content: space-between;
+}
+.xtics{
+  margin-bottom: 10%;
+}
+.social-media{
+  margin-top: 3%;
+ 
+  right: 10px;
+}
+.social-icons{
+  display: flex;
+  height: 15vh;
+  width: 30%;
+  margin :auto;
+  justify-content: space-around;
+  margin-top: 10%;
+
+}
+.footer-section p{
+  font-size: 14px;
+}
+.footer-section{
+  display: flex;
+  
+  height: 80px;
+  bottom: 5%;
+
+  text-align: center;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+
+@media (max-width:580px){
+  .content1{
+    padding: 10%;
+    box-shadow:inset 0 0 0 2000px rgba(24, 24, 23, 0.9);
+    height: auto;
+  }
+  .contents{
+    box-shadow:inset 0 0 0 2000px rgba(24, 24, 23, 0.9);
+  }
+  .content-section{
+    flex-direction: column;
+    display: flex;
+  }
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .footer-section{
+    width: 100%;
+  }
+  .footer-section h2{
+    font-size: 16px;
+  }
+}
